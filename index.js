@@ -20,7 +20,7 @@ const client = new tmi.client(options);
 client.connect();
 
 client.on('connected', (adress, port) => {
-  client.action('geekde04','Hallo, Bot is now connected');
+  client.action('channelname','Hallo, Bot is now connected');
 });
 
 client.on('chat', (channel, user, message, self) => {
